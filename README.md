@@ -76,6 +76,7 @@ type Todo @model {
 ```
 
 6. Then deploy using `amplify push`.
+
    ![Local Image](./src/assets/initi_todo.png)
    ![Local Image](./src/assets/second_task.png)
 
@@ -92,6 +93,10 @@ import '@aws-amplify/ui-react/styles.css';` to the src/App.jsx file.
 13. Lastly, add this code to implement the authentication to the Todo list app, wrap the App with the withAuthenticator component on export and run `npm run dev`.
 
 ![Local Image](./src/assets/adding_auth.png)
+
+14. Adding another task after authenticating with Cognito user.
+
+![Local Image](./src/assets/test_after_auth.png)
 
 ## Acknowledgements
 
