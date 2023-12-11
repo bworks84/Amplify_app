@@ -45,6 +45,8 @@ npm run dev
 amplify init
 ```
 
+![init](./src/assets/init.png)
+
 - Make sure to edit the configuration after running amplify init so that the distribution directory path : dist
 
 ## Steps
@@ -74,14 +76,22 @@ type Todo @model {
 ```
 
 6. Then deploy using `amplify push`.
+   ![Local Image](./src/assets/initi_todo.png)
+   ![Local Image](./src/assets/second_task.png)
+
 7. Update src/App.jsx with the following code to build out the Todo List UI, including useState, fetching the newly built out API, and add styling. (Refer to my src/App.jsx if you need easy code to follow). Then run locally to see `npm run dev`.
 8. Authentication can be set up easily but will require some configuration within AWS Cognito. You'll need to set up a user with a username and password to complete the steps below.
 9. Run `amplify add auth` to add authentication to the Todo app
 10. Select default configuration when prompted and choose username for the sign in option.
 11. Run `amplify push` to push updates to amplify console. Verify updates by running `amplify console` where you can see we now have authentication and API added to the react-amplified project.
+
+![Local Image](./src/assets/amplify_console.png)
+
 12. Add Amplify UI components with `npm install @aws-amplify/ui-react`. Add `import { withAuthenticator, Button, Heading } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';` to the src/App.jsx file.
 13. Lastly, add this code to implement the authentication to the Todo list app, wrap the App with the withAuthenticator component on export and run `npm run dev`.
+
+![Local Image](./src/assets/adding_auth.png)
 
 ## Acknowledgements
 
